@@ -113,14 +113,6 @@ The [llm-as-judge-skills](examples/llm-as-judge-skills/) example is a complete T
 - **Rubric Generation**: Create domain-specific evaluation standards
 - **EvaluatorAgent**: High-level agent combining all evaluation capabilities
 
-```bash
-# Quick start
-cd examples/llm-as-judge-skills
-npm install
-cp env.example .env  # Add OPENAI_API_KEY
-npm test  # Run 19 passing tests
-```
-
 ### Book SFT Pipeline Example
 
 The [book-sft-pipeline](examples/book-sft-pipeline/) example demonstrates training small models (8B) to write in any author's style:
