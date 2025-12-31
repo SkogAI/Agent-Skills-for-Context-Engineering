@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "name": "context-fundamentals",
+  "description": "Understand the components, mechanics, and constraints of context in agent systems.",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "context-fundamentals",
+      "description": "Get context engineering fundamentals",
+      "usage": "context-fundamentals",
+      "examples": ["/context-fundamentals"]
+    }
+  ]
+}

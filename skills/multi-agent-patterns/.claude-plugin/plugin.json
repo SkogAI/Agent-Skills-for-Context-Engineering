@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "name": "multi-agent-patterns",
+  "description": "Design multi-agent architectures for complex tasks.",
+  "version": "1.0.0"
+}

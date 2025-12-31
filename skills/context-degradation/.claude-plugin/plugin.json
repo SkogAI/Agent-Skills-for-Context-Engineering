@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "name": "context-degradation",
+  "description": "Recognize, diagnose, and mitigate patterns of context degradation in agent systems.",
+  "version": "1.0.0"
+}

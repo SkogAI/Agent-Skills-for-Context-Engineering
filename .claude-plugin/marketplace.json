@@ -9,27 +9,203 @@
   },
   "plugins": [
     {
-      "name": "context-engineering",
-      "description": "Production-grade Agent Skills for context engineering. Includes strategies for context window management, multi-agent orchestration, memory systems, and advanced LLM-as-a-Judge evaluation frameworks.",
-      "version": "1.1.0",
-      "source": "./skills",
+      "name": "context-fundamentals",
+      "description": "Understand the components, mechanics, and constraints of context in agent systems. Use when designing agent architectures, debugging context-related failures, or optimizing context usage.",
+      "version": "1.0.0",
+      "source": "./skills/context-fundamentals",
       "category": "development",
       "strict": false,
       "author": {
         "name": "Muratcan Koylan"
       },
-      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-fundamentals",
       "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
       "license": "MIT",
       "keywords": [
         "context-engineering",
         "agent-skills",
+        "fundamentals",
+        "context-window"
+      ]
+    },
+    {
+      "name": "context-degradation",
+      "description": "Recognize, diagnose, and mitigate patterns of context degradation in agent systems. Use when context grows large, agent performance degrades unexpectedly, or debugging agent failures.",
+      "version": "1.0.0",
+      "source": "./skills/context-degradation",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-degradation",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "context-engineering",
+        "degradation",
+        "debugging",
+        "lost-in-the-middle"
+      ]
+    },
+    {
+      "name": "context-compression",
+      "description": "Design and evaluate context compression strategies for long-running agent sessions. Use when agents exhaust memory, need to summarize conversation history, or when optimizing tokens-per-task rather than tokens-per-request.",
+      "version": "1.0.0",
+      "source": "./skills/context-compression",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-compression",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "context-engineering",
+        "compression",
+        "summarization",
+        "optimization"
+      ]
+    },
+    {
+      "name": "context-optimization",
+      "description": "Apply optimization techniques to extend effective context capacity. Use when context limits constrain agent performance, when optimizing for cost or latency, or when implementing long-running agent systems.",
+      "version": "1.0.0",
+      "source": "./skills/context-optimization",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-optimization",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "context-engineering",
+        "optimization",
+        "latency",
+        "cost-reduction"
+      ]
+    },
+    {
+      "name": "multi-agent-patterns",
+      "description": "Design multi-agent architectures for complex tasks. Use when single-agent context limits are exceeded, when tasks decompose naturally into subtasks, or when specializing agents improves quality.",
+      "version": "1.0.0",
+      "source": "./skills/multi-agent-patterns",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
         "multi-agent",
-        "memory-systems",
+        "architecture",
+        "patterns",
+        "orchestration"
+      ]
+    },
+    {
+      "name": "memory-systems",
+      "description": "Design and implement memory architectures for agent systems. Use when building agents that need to persist state across sessions, maintain entity consistency, or reason over structured knowledge.",
+      "version": "1.0.0",
+      "source": "./skills/memory-systems",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "memory",
+        "persistence",
+        "rag",
+        "knowledge-graph"
+      ]
+    },
+    {
+      "name": "tool-design",
+      "description": "Design tools that agents can use effectively, including when to reduce tool complexity. Use when creating, optimizing, or reducing agent tool sets.",
+      "version": "1.0.0",
+      "source": "./skills/tool-design",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/tool-design",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "tool-design",
+        "function-calling",
+        "api-design",
+        "agent-tools"
+      ]
+    },
+    {
+      "name": "evaluation",
+      "description": "Build evaluation frameworks for agent systems. Use when testing agent performance, validating context engineering choices, or measuring improvements over time.",
+      "version": "1.0.0",
+      "source": "./skills/evaluation",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "evaluation",
+        "testing",
+        "metrics",
+        "benchmarking"
+      ]
+    },
+    {
+      "name": "advanced-evaluation",
+      "description": "Master LLM-as-a-Judge evaluation techniques including direct scoring, pairwise comparison, rubric generation, and bias mitigation. Use when building evaluation systems, comparing model outputs, or establishing quality standards for AI-generated content.",
+      "version": "1.0.0",
+      "source": "./skills/advanced-evaluation",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/advanced-evaluation",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
         "llm-as-a-judge",
-        "context-optimization",
-        "harness-engineering",
-        "agent-engineering"
+        "advanced-evaluation",
+        "pairwise-comparison",
+        "scoring"
+      ]
+    },
+    {
+      "name": "project-development",
+      "description": "Design and build LLM-powered projects from ideation through deployment. Use when starting new agent projects, choosing between LLM and traditional approaches, or structuring batch processing pipelines.",
+      "version": "1.0.0",
+      "source": "./skills/project-development",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/project-development",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "project-management",
+        "development-lifecycle",
+        "pipelines",
+        "ideation"
       ]
     },
     {
@@ -54,6 +230,27 @@
         "sft-pipeline",
         "tinker-training",
         "lora-adapters"
+      ]
+    },
+    {
+      "name": "digital-brain",
+      "description": "Personal knowledge management system for founders, creators, and builders. Manages personal brand, content creation, network relationships, goals, and provides voice/tone consistency for content generation.",
+      "version": "1.0.0",
+      "source": "./examples/digital-brain-skill",
+      "category": "development",
+      "strict": false,
+      "author": {
+        "name": "Muratcan Koylan"
+      },
+      "homepage": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/examples/digital-brain-skill",
+      "repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "license": "MIT",
+      "keywords": [
+        "personal-knowledge-management",
+        "pkm",
+        "digital-brain",
+        "content-creation",
+        "founder-tools"
       ]
     }
   ]

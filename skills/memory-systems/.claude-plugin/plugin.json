@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "name": "memory-systems",
+  "description": "Design and implement memory architectures for agent systems.",
+  "version": "1.0.0"
+}

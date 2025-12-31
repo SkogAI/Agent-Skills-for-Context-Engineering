@@ -74,11 +74,21 @@ This repository is configured as a **Claude Code Plugin**, allowing you to load 
    Run this command in Claude Code to add this repository as a plugin source:
    ```bash
    /plugin marketplace add muratcankoylan/Agent-Skills-for-Context-Engineering
+   ```
 
-2. Install the **Skills Install** the context engineering suite:
+2. **Install Skills**
+   You can install individual context engineering skills as needed:
    ```bash
-   /plugin install context-engineering@context-engineering-marketplace
+   /plugin install context-fundamentals@context-engineering-marketplace
+   /plugin install tool-design@context-engineering-marketplace
+   /plugin install digital-brain@context-engineering-marketplace
+   ```
    
+   View all available skills:
+   ```bash
+   /plugin available
+   ```
+
 <img width="1014" height="894" alt="Screenshot 2025-12-26 at 12 34 47 PM" src="https://github.com/user-attachments/assets/f79aaf03-fd2d-4c71-a630-7027adeb9bfe" />
 
 ### For Cursor & Codex & IDE
@@ -173,4 +183,3 @@ MIT License - see LICENSE file for details.
 ## References
 
 The principles in these skills are derived from research and production experience at leading AI labs and framework developers. Each skill includes references to the underlying research and case studies that inform its recommendations.
-

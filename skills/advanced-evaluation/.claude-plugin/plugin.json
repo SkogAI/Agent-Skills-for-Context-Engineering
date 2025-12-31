@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "name": "advanced-evaluation",
+  "description": "Master LLM-as-a-Judge evaluation techniques including direct scoring and pairwise comparison.",
+  "version": "1.0.0"
+}

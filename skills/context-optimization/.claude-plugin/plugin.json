@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "name": "context-optimization",
+  "description": "Apply optimization techniques to extend effective context capacity.",
+  "version": "1.0.0"
+}
