@@ -4,7 +4,7 @@ This file provides context for AI assistants (Claude Code, Cursor, Codex, etc.) 
 
 ## Project Overview
 
-**Agent Skills for Context Engineering** is an open-source collection of 13 agent skills and 5 example projects focused on context engineering — the discipline of managing LLM context windows to maximize agent effectiveness. Skills are platform-agnostic markdown documents with optional code examples. The repository also serves as a **Claude Code Plugin Marketplace**.
+**Agent Skills for Context Engineering** is an open-source collection of 13 agent skills and 6 example projects focused on context engineering — the discipline of managing LLM context windows to maximize agent effectiveness. Skills are platform-agnostic markdown documents with optional code examples. The repository also serves as a **Claude Code Plugin Marketplace**.
 
 **License**: MIT
 **Primary language**: Markdown (skills), TypeScript and Python (examples)
@@ -38,7 +38,12 @@ This file provides context for AI assistants (Claude Code, Cursor, Codex, etc.) 
 │   ├── llm-as-judge-skills/         #   TypeScript evaluation tools (19 tests)
 │   ├── book-sft-pipeline/           #   Model training pipeline
 │   ├── x-to-book-system/            #   Multi-agent content synthesis
-│   └── interleaved_thinking/        #   Reasoning trace optimizer (Python)
+│   ├── interleaved_thinking/        #   Reasoning trace optimizer (Python)
+│   └── context-harness/             #   Filesystem-context stress test (Python, 45 tests)
+│
+├── journal/                         # Dated session journals and analysis
+│   └── YYYY-MM-DD/                  #   Per-day entries (build logs, audits, synthesis)
+├── paths/                           # Structured learning/handover paths
 │
 ├── template/SKILL.md                # Canonical template for new skills
 ├── docs/                            # Research and reference documents
@@ -135,6 +140,19 @@ pytest                # Run tests
 ruff check .          # Lint
 ```
 
+### Python (context-harness)
+
+- **Runtime**: Python >= 3.10
+- **Build system**: setuptools via pyproject.toml
+- **Dependencies**: anthropic
+- **Testing**: pytest with pytest-asyncio (45 tests)
+
+```bash
+cd examples/context-harness
+pip install -e ".[dev]"
+pytest                # Run tests
+```
+
 ## Claude Code Plugin Marketplace
 
 The `.claude-plugin/marketplace.json` file defines 5 plugin bundles grouping the 13 skills:
@@ -198,8 +216,9 @@ Refer to `.gitignore` — notably:
 # TypeScript example
 cd examples/llm-as-judge-skills && npm install && npm test
 
-# Python example
+# Python examples
 cd examples/interleaved_thinking && pip install -e ".[dev]" && pytest
+cd examples/context-harness && pip install -e ".[dev]" && pytest
 ```
 
 ### Validating skill format

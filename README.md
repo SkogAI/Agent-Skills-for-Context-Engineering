@@ -162,6 +162,7 @@ The [examples](examples/) folder contains complete system designs that demonstra
 | [x-to-book-system](examples/x-to-book-system/) | Multi-agent system that monitors X accounts and generates daily synthesized books | multi-agent-patterns, memory-systems, context-optimization, tool-design, evaluation |
 | [llm-as-judge-skills](examples/llm-as-judge-skills/) | Production-ready LLM evaluation tools with TypeScript implementation, 19 passing tests | advanced-evaluation, tool-design, context-fundamentals, evaluation |
 | [book-sft-pipeline](examples/book-sft-pipeline/) | Train models to write in any author's style. Includes Gertrude Stein case study with 70% human score on Pangram, $2 total cost | project-development, context-compression, multi-agent-patterns, evaluation |
+| [context-harness](examples/context-harness/) | Context-aware agent harness stress-testing filesystem-context patterns: scratch pad, observation masking, plan persistence, dynamic skill loading (45 tests) | filesystem-context, context-optimization, tool-design, project-development |
 
 Each example includes:
 - Complete PRD with architecture decisions
